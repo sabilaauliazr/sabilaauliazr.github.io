@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Sabila Aulia Zahra</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        :root {
+            --bg-primary: #121212;
+            --bg-secondary: #1e1e1e;
+            --text-color: #e0e0e0;
+            --accent-color: #ff69b4; /* Pink */
+            --font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            font-family: var(--font-family);
+            background-color: var(--bg-primary);
+            color: var(--text-color);
+            margin: 0;
+        }
+
+        .navbar {
+            background-color: var(--bg-secondary);
+            padding: 1rem 2rem;
+            border-bottom: 1px solid #333;
+        }
+        
+        .navbar-brand {
+            color: var(--accent-color) !important;
+            font-weight: bold;
+        }
+
+        .navbar .nav-link {
+            color: var(--text-color);
+            transition: color 0.3s ease;
+        }
+
+        .navbar .nav-link:hover, .navbar .nav-link.active {
+            color: var(--accent-color);
+        }
+
+        .social-links a {
+            font-size: 1.2rem;
+            margin-left: 1rem;
+            color: var(--text-color);
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: var(--accent-color);
+        }
+        
+        main {
+            padding: 30px;
+        }
+
+        section {
+            padding: 40px;
+            background-color: var(--bg-secondary);
+            border-radius: 8px;
+            margin-bottom: 30px;
+            border: 1px solid #333;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+        
+        section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        section.active {
+            box-shadow: 0 0 15px 5px var(--accent-color), 0 0 30px 10px rgba(255, 105, 180, 0.2);
+            transform: scale(1.02);
+            z-index: 10;
+            position: relative;
+        }
+
+        h2 {
+            color: var(--accent-color);
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+        
+        .badge-skill {
+            background-color: var(--bg-primary);
+            color: var(--text-color);
+            font-weight: normal;
+            display: inline-flex;
+            align-items: center;
+            padding: 0.5em 1em;
+            border-radius: 20px;
+            margin: 0.25em;
+            border: 1px solid var(--accent-color);
+        }
+        
+        .badge-skill .fab, .badge-skill .fas {
+            margin-right: 0.5em;
+            color: var(--accent-color);
+        }
+
+        @media (max-width: 992px) {
+            .navbar-collapse {
+                text-align: center;
+            }
+            .social-links {
+                margin-top: 1rem;
+            }
+            .social-links a {
+                margin: 0 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">Sabila Aulia Zahra</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#profil">PROFIL</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#pendidikan">PENDIDIKAN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#pengalaman">PENGALAMAN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#kemampuan">KEMAMPUAN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sertifikasi">SERTIFIKASI</a>
+                        </li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="https://wa.me/6285215391575" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.linkedin.com/in/sabila-aulia-zahra/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/sabilaauliazr" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="mailto:halosabilaauliazahra@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <section id="profil" class="card-section">
+            <h2>PROFIL</h2>
+            <div class="d-flex align-items-center mb-4">
+                <img src="SabilaAuliaZahra.jpg" alt="Sabila Aulia Zahra" class="rounded-circle me-4" style="width: 120px; height: 120px; border: 3px solid var(--accent-color);">
+                <div>
+                    <h3>Sabila Aulia Zahra</h3>
+                    <p class="mb-0 text-muted" style="color: var(--text-color) !important;">Mahasiswa</p>
+                </div>
+            </div>
+            <p>Saya Sabila Aulia Zahra Mahasiswa S1 Teknologi Informasi di Universitas Bina Sarana Informatika dengan kompetensi bidang pengembangan perangkat lunak. Saya menguasai analisis perancangan arsitektur sistem, perancangan database, serta memiliki minat yang mendalam dalam pengembangan aplikasi mobile dan website. Siap berkontribusi dalam merancang sistem yang efisien dan inovatif.</p>
+        </section>
+
+        <section id="pendidikan" class="card-section">
+            <h2>PENDIDIKAN</h2>
+            <p><strong>Universitas Bina Sarana Informatika</strong><br>
+            S1-Teknologi Informasi, IPK: 3.84 <br>
+            <small>2022 - Sekarang</small></p>
+            <p><strong>SMKN 8 Kota Bekasi</strong><br>
+            SMK-Animasi, Nilai Akhir: 86 <br>
+            <small>2019 - 2022</small></p>
+        </section>
+
+        <section id="pengalaman" class="card-section">
+            <h2>PENGALAMAN KERJA</h2>
+            <p><strong>PT Indonesia Akita Skye</strong><br>
+            IT Support <br>
+            <small>Februari 2025 - Mei 2025</small></p>
+            <p><strong>Shopee Express</strong><br>
+            Kurir Mitra Mustikajaya HUB<br>
+            <small>Februari 2024 - Februari 2025</small></p>
+            <p><strong>Politeknik Sains Seni Rekakreasi</strong><br>
+            Illustrator Staff <br>
+            <small>Februari 2022 - April 2022</small></p>
+        </section>
+
+        <section id="kemampuan" class="card-section">
+            <h2>KEMAMPUAN</h2>
+            <ul class="list-inline">
+                <li class="list-inline-item badge-skill"><i class="fab fa-laravel"></i>Laravel</li>
+                <li class="list-inline-item badge-skill"><i class="fas fa-database"></i>MySQL</li>
+                <li class="list-inline-item badge-skill"><i class="fab fa-python"></i>Python</li>
+                <li class="list-inline-item badge-skill"><i class="fab fa-figma"></i>Figma</li>
+                <li class="list-inline-item badge-skill"><i class="fab fa-bootstrap"></i>Bootstrap 4 & 5</li>
+                <li class="list-inline-item badge-skill"><i class="fab fa-php"></i>PHP</li>
+            </ul>
+        </section>
+
+        <section id="sertifikasi" class="card-section">
+            <h2>SERTIFIKASI & PELATIHAN</h2>
+            <ul class="list-unstyled">
+                <li>Analis Program (BNSP, 2025)</li>
+                <li>MTCNA - MikroTik Certified Network Associate (MikroTik, 2025)</li>
+                <li>Introduction to Cloud and Artificial Intelligence Applications for Digital Business (Digital Talent Scholarship, 2024)</li>
+                <li>Introduction to Cyber Security (Cisco Networking Academy, 2024)</li>
+                <li>PCAP - Programming Essentials In Python (Cisco Networking Academy, 2023)</li>
+            </ul>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('section');
+
+            sections.forEach(section => {
+                section.addEventListener('click', () => {
+                    sections.forEach(s => s.classList.remove('active'));
+                    section.classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
